@@ -5,12 +5,65 @@
     box-sizing: border-box;
 }
 body{
-    font-family: ;
+    font-family: 'Mulish', sans-serif;
+    color: #5A5A5D;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+header,
+main,
+.footer-container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* navbar styles */
-
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.25rem;
+    padding-bottom: 3.125rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo a {
+    text-decoration: none;
+}
+.logo h2 {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-left: 1rem;
+}
+.logo h2 span {
+    color: #FF5400;
+}
+.links {
+    display: flex;
+    gap: 2.75rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links a {
+    color: #424247;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.links a:hover {
+    color: #FF5400;
+    transition: color 0.3s;
+}
+.toggle-switch {
+    display: none;
+}
 /* banner styles */
 
 /* tours styles */
@@ -22,3 +75,24 @@ body{
 /* newsletter styles */
 
 /* footer styles */
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 600px) {
+    .navbar-container {
+        padding: 20px;
+    }
+    .links {
+        display: none;
+    }
+    .toggle-switch {
+        display: block;
+        color: #131318;
+        font-size: 1.5rem;
+    }
+    .logo img {
+        width: 1.75rem;
+    }
+    .logo h2 {
+        font-size: 1.35rem;
+    }
+}
