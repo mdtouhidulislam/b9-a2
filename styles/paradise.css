@@ -518,8 +518,14 @@ p.copyright {
     }
 }
 /* Tablet/Medium Responsive Styles */
-@media screen and (min-width: 601px) and (max-width: 992px) {
+@media screen and (min-width: 601px) and (max-width: 1200px) {
     .navbar-container {
         flex-direction: column;
+    }
+    header .logo {
+        margin-bottom: 24px;
+    }
+    header, main, .footer-container{
+        padding: 0 20px;
     }
 }
