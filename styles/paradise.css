@@ -65,7 +65,72 @@ main,
     display: none;
 }
 /* banner styles */
-
+.banner-container {
+    background-image: url('../images/banner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 1rem;
+}
+.banner-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 6.625rem 0;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    border-radius: 1rem;
+}
+.banner-text {
+    max-width: 676px;
+    margin-bottom: 3rem;
+}
+.banner-title {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+.banner-desc {
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.banner-form{
+    max-width: 768px;
+    width: 100%;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.30);
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+}
+.banner-form input, .banner-form select, .banner-form button {
+    padding: 16px;
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    flex-basis: 174px;
+}
+.banner-form button {
+    background: #FF5400;
+    color: #fff;
+}
+.banner-form button i {
+    margin-right: 0.5rem;
+}
+header {
+    margin-bottom: 100px;
+}
 /* tours styles */
 
 /* destination styles */
@@ -94,5 +159,32 @@ main,
     }
     .logo h2 {
         font-size: 1.35rem;
+    }
+    .banner-container {
+        margin: 0 20px;
+    }
+    .banner-title {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .banner-overlay {
+        padding: 32px 24px;
+    }
+    .banner-desc {
+        font-size: 14px;
+    }
+    .banner-text {
+        margin-bottom: 32px;
+    }
+    .banner-form {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .banner-form input, .banner-form select, .banner-form button {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    header {
+        margin-bottom: 24px;
     }
 }
